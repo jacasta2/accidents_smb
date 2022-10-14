@@ -39,7 +39,7 @@ This script loads the following information:
 
 The user can change the arguments of the function `data_for_clustering(2022, 3, 31)` to bring data for a specific 3-year period. Once they are modified, the user can run the script and it will automatically pull the 3-year data up to the modified date and predict its priority clusters. 
 
-Before running this script, the user needs to inspect the clustering results from `model_creation.py` and modify the dictionary in the following line of code accordingly:
+Before running this script, the user needs to inspect the clustering results from `model_creation.py` and modify the dictionary in the following line of code from `model_prediction.py` accordingly:
 
 ```
 dictp = {0: "1 Priorizado", 1: "3 NA", 2: "2 Complementario"}
