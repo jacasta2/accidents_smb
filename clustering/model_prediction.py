@@ -14,8 +14,8 @@ cluster_df = data_for_clustering(2022, 3, 31)
 #cluster_df = pd.read_csv("raw_data_predict_r.csv")
 
 #### We load the saved MinMax scaler and estimated K-Prototypes model
-scaler = joblib.load("scaler_r.mod")
-clusterer = joblib.load("kprototypes_r.mod")
+scaler = joblib.load("scaler.mod")
+clusterer = joblib.load("kprototypes.mod")
 
 ##### We take the features we use for the prediction
 data_cluster = cluster_df[["HORARIO", "accidentes", "muertes", "heridos", "vulnerables"]].copy()

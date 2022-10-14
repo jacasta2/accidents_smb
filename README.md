@@ -59,7 +59,7 @@ This module is already provided with files that allow to run a test. These files
 * **kprototypes_r.mod:** contains the K-Prototypes model fitted with 3-year data from 2019 to 2021.
 * **raw_data_predict_r.csv:** contains 3-year data up to March 31, 2022.
 
-The test will predict the priority levels for the 3-year data from **raw_data_predict_r.csv:** and requires to run only `model_prediction.py` commenting line 12 and uncommenting line 14.
+The test will predict the priority levels for the 3-year data from **raw_data_predict_r.csv**. It requires to run only `model_prediction.py` commenting line 12, uncommenting line 14 and changing the names of the scaler and model files in lines 17 and 18 by appending *_r* to them.
 
 ## Credits
 
