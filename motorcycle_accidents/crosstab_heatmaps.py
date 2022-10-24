@@ -89,12 +89,11 @@ accidents_crosstab = pd.crosstab(index = [accidents3["gravedad"], accidents3["cl
     columns = accidents3["clase_veh"], normalize = "all")*100
 plt.figure(figsize = (12, 5))
 sns.heatmap(accidents_crosstab, cmap = "Reds", cbar_kws = {"label": "Total %"})
-plt.tight_layout()
-plt.title("Motorcycle accidents: vehicles involved and severity and type of accidents " + date_interval[1] + " - "  + \
-    date_interval[0])
-plt.xlabel("Vehicle type")
-plt.ylabel("Severity and accident type")
-plt.savefig("crosstab_heatmap_all.png")
+plt.title("Vehicles involved and severity and type of accidents for motorcycle accidents: " + date_interval[1] + \
+    " to " + date_interval[0], fontsize = 16, y = 1.05)
+plt.xlabel("Vehicle type", fontsize = 13)
+plt.ylabel("Severity and accident type", fontsize = 13)
+plt.savefig("crosstab_heatmap_all.png", bbox_inches = "tight")
 
 # For accidents where a motorcycle was involved, we generate a heatmap from a crosstab that shows the interaction
 # between the vehicles involved and the accident severity and type. The crosstab is row-normalized, i.e., for each
@@ -104,9 +103,8 @@ accidents_crosstab = pd.crosstab(index = [accidents3["gravedad"], accidents3["cl
     columns = accidents3["clase_veh"], normalize = "index")*100
 plt.figure(figsize = (12, 5))
 sns.heatmap(accidents_crosstab, cmap = "Reds", cbar_kws= {"label": "Row %"})
-plt.tight_layout()
-plt.title("Motorcycle accidents: vehicles involved and severity and type of accidents " + date_interval[1] + " - "  + \
-    date_interval[0])
-plt.xlabel("Vehicle type")
-plt.ylabel("Severity and accident type")
-plt.savefig("crosstab_heatmap_rows.png")
+plt.title("Vehicles involved and severity and type of accidents for motorcycle accidents: " + date_interval[1] + \
+    " to " + date_interval[0], fontsize = 16, y = 1.05)
+plt.xlabel("Vehicle type", fontsize = 13)
+plt.ylabel("Severity and accident type", fontsize = 13)
+plt.savefig("crosstab_heatmap_rows.png", bbox_inches = "tight")
