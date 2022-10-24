@@ -75,7 +75,7 @@ The script `crosstab_heatmaps.py` uses the function from `date_creation.py` to p
 python crosstab_heatmaps.py
 ```
 
-The script generates 2 heatmaps: all and row-normalized, named **crosstab_heatmap_all.png** and **crosstab_heatmap_rows.png**, respectively.
+The script generates 2 heatmaps, all and row-normalized, and saves them in two png files named **crosstab_heatmap_all.png** and **crosstab_heatmap_rows.png**, respectively.
 
 ### Credits
 
