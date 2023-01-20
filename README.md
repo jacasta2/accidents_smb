@@ -5,14 +5,16 @@ The following description corresponds to the **Clustering** and **Motorcycles an
 The main challenge for developing this project is the lack of 'useful' information on highway corridors. The road grid available has either too long or too short corridors, which does not allow to locate sections of the corridors to focus on for implementing road safety operations. A future implementation should relate different geographical sources to locate each accident on shorter corridors within the long main corridors from the available road grid file.
 
 Another challenge was the initial ETL process to pull accident data from an ArcGIS service and populate a local postgres database with such data. This is explained with some detail in the following section. A feature I hope to implement in the future would allow to pull data from this service every month to keep the database up to date.
- 
+
 ## Clustering
 
 ### Getting started
 
 The script `model_creation.py` provided in this module connects to a local postgres database created to develop this project. Such database is populated with accident data retrieved from a publicly available ArcGIS service with data from all the accidents reported in the city. The database was populated with data from 2015 to August 2022. The folder **initial_etl** contains the Jupyter notebooks that allowed to retrieve such data and populate the database. While this initial ETL process could be automatized for the *Siniestro*, *Con Muerto* and *Con Herido* layers or tables, the lack of date information in the remaining layers (*Vehiculo*, *Causa* and *Actor Vial*) and the impossibility of executing JOIN operations in the service make difficult to automatize such process for these layers. Instead, the process was done using the OBJECTID field of these layers in a somewhat manual process. 
 
-Despite the issues mentioned above, the folder **initial_etl** provides the necessary shapefiles to populate the database with data from 2015 to August 2022. Please check the Jupyter notebook `4_database_creation.ipynb` to see how this was done. Make sure to create the database beforehand and adjust the database connection parameters in the notebook accordingly. 
+Despite the issues mentioned above, the folder **initial_etl** provides the necessary shapefiles to populate the database with data from 2015 to August 2022. Please check the Jupyter notebook `4_database_creation.ipynb` to see how this was done. Make sure to create the database beforehand and adjust the database connection parameters in the notebook accordingly.
+
+The data model created through this initial ETL process and its documentation can be found in the folder **data_model**.
 
 ### Using the scripts
 
