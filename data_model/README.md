@@ -5,7 +5,7 @@ Figure 1 below shows an overview of the model that captures the structure of the
 <p style="line-height:0.5" align="center">
 	<img src="data_model.png" />
 </p>
-<p style="line-height:0.5" align="center"><b>Figure 1.</b> Data model of traffic accident data.</p>
+<p style="line-height:0.5" align="center"><b>Figure 1.</b> Data model of traffic accident data using the Crow's Foot notation.</p>
 
 A detailed data documentation is presented next.
 
