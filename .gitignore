@@ -130,4 +130,13 @@ dmypy.json
 
 
 # Defined by me
+clustering/Malla_Vial_Integral_Bogota_r2.geojson
+git_commands
+postgres_commands
+initial_etl/shapefiles/accidents/
+initial_etl/shapefiles/actors/
+initial_etl/shapefiles/causes/
+initial_etl/shapefiles/injured/
+initial_etl/shapefiles/killed/
+initial_etl/shapefiles/vehicles/
 data_model/*.vsdx
