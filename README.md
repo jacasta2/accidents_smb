@@ -8,7 +8,7 @@ Another challenge was the initial ETL process to pull accident data from 2015 to
 
 ## Getting started
 
-While the initial ETL process could have been automatized for the *Siniestro*, *Con Herido* and *Con Muerto* layers, the lack of date information in the remaining layers (*Actor Vial*, *Causa* and *Vehiculo*) and the impossibility of executing JOIN operations in the service make difficult to automatize such process for these layers. Instead, the process was done using the OBJECTID field of these layers in a somewhat manual process.
+While the initial ETL process could have been automatized for the ArcGIS layers *Siniestro*, *Con Herido* and *Con Muerto*, the lack of date information in the remaining layers (*Actor Vial*, *Causa* and *Vehiculo*) and the impossibility of executing JOIN operations in the service make difficult to automatize such process for these layers. Instead, the process was done using the OBJECTID field of these layers in a somewhat manual process.
 
 Please check the Jupyter notebooks inside the folder **initial_etl** to see how the initial ETL process was done. Please also check the Jupyter notebook `4_database_creation.ipynb` before creating the local postgres database. Make sure to create the database beforehand and adjust the database connection parameters in the notebook accordingly.
 
