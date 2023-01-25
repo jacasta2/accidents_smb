@@ -9,7 +9,7 @@ Figure 1 below shows an overview of the model that captures the structure of the
 
 A detailed data documentation is presented next.
 
-## siniestros
+## siniestros (accidents)
 
 Main table with basic information related to an accident.
 
@@ -30,7 +30,7 @@ Main table with basic information related to an accident.
 * DIA_MES_OCURRENCIA_ACC (int): Day of the month when the accident occurred. 
 * HORA_OCURRENCIA_ACC (int): Time of day when the accident occurred.
 
-## conheridos
+## conheridos (injured people)
 
 Table with information related to people injured in an accident.
 
@@ -51,7 +51,7 @@ Table with information related to people injured in an accident.
 * DIA_MES_OCURRENCIA_ACC (int): Day of the month when the accident occurred. 
 * HORA_OCURRENCIA_ACC (int): Time of day when the accident occurred.
 
-## confallecidos
+## confallecidos (killed people)
 
 Table with information related to people killed in an accident.
 
@@ -74,7 +74,7 @@ Table with information related to people killed in an accident.
 * DIA_MES_OCURRENCIA_ACC (int): Day of the month when the accident occurred. 
 * HORA_OCURRENCIA_ACC (int): Time of day when the accident occurred.
 
-## vehiculos
+## vehiculos (vehicles)
 
 Table with information related to the vehicles involved in an accident.
 
@@ -85,7 +85,7 @@ Table with information related to the vehicles involved in an accident.
 * MODALIDAD (string): For PUBLICO vehicles, it captures the type of passenger and/or cargo service a vehicle provides from 12 available categories.
 * ENFUGA (string): Captures whether it was a hit-and-run vehicle (Y) or not (N).
 
-## actores
+## actores (actors)
 
 Table with information related to the people involved in an accident.
 
@@ -100,7 +100,7 @@ Table with information related to the people involved in an accident.
 * FECHA_POSTERIOR_MUERTE (unix time): Date when the road actor passed away if she died at a date following the accident.
 * ESTADO_FINAL (string): Captures whether the road actor was killed regardless of whether she died in the accident or at a date following the accident (MUERTO), injured (HERIDO) or uninjured (ILESO). This attribute tries to address some inconsistencies found when looking at the values from ESTADO and MUERTE_POSTERIOR. 
 
-## causas
+## causas (causes)
 
 Table with information related to the causes of an accident.
 
