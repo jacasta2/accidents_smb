@@ -28,7 +28,7 @@ The notebook of this module, `data_pipeline.ipynb`, is stored in the folder **da
 
 The notebook automatically retrieves the current year and month and uses this information to update the tables *siniestros* (accidents), *conheridos* (injured people) and *confallecidos* (killed people) since the corresponding ArcGIS layers store year and month information.
 
-The notebook then retrieves the *FORMULARIO* values from the recently retrieved accidents data and uses these values to run queries in the remaining layers that pull records whose *FORMULARIO* values match them. Once the records are pulled, they are used to update the tables *actores* (actors), *causas* (causes) and *vehiculos* (vehicles).
+The notebook then retrieves the *FORMULARIO* values from the recently retrieved accidents data and uses these values to run queries in the remaining layers, pulling records whose *FORMULARIO* values match them. Once the records are pulled, they are used to update the tables *actores* (actors), *causas* (causes) and *vehiculos* (vehicles).
 
 ## Clustering
 
