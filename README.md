@@ -85,6 +85,8 @@ The test will predict the priority levels for the 3-year data from **raw_data_pr
 
 Before running the test, please make sure to create the database and adjust the database connection parameters in the supporting functions accordingly.
 
+The folder **clustering** provides Jupyter notebooks for data creation, model creation and model prediction to play with the implementation of this module.
+
 ## Motorcycles and other vehicles
 
 ### Using the script
