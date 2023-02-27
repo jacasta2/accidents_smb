@@ -12,6 +12,10 @@ While the initial ETL process could have been automatized for the ArcGIS layers 
 
 Please check the Jupyter notebooks inside the folder **initial_etl** to see how the initial ETL process was done. Please also check the Jupyter notebook `4_database_creation.ipynb` before creating the local postgres database. Make sure to create the database beforehand and adjust the database connection parameters in the notebook accordingly.
 
+Note the layer *Via* is not considered since it is outdated.
+
+The ArcGIS service can be found in [Accidentalidad/WSAcidentalidad_Publico (FeatureServer)](https://sig.simur.gov.co/arcgis/rest/services/Accidentalidad/WSAcidentalidad_Publico/FeatureServer).
+
 ## Data model
 
 The data model created through the initial ETL process and its documentation can be found in the folder **data_model**.
