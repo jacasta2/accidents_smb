@@ -64,9 +64,9 @@ python model_creation.py
 The clusters should be updated with certain periodicity. **Every time this script is run to update the clusters, the user should manually inspect the results to properly label the data in `model_prediction.py`**. The Jupyter notebook `model_creation.ipynb` provides code that plots several strip plots that can help in such inspection. Figure 1 below shows three sample strip plots, from left to right: number of accidents, number of killed people in accidents and number of injured people in accidents. These plots suggest the blue labels (0) correspond to corridors and times of the day with the highest accident, killed people and injured people risks, the orange labels (1) to corridors and times of the day with lower risks and the green labels (2) to corridors and times of the day with the lowest risks. 
 
 <p style="line-height:0.5" align="center">
-    <img src="/images/sample_stripplot.png" />
+    <img src="images/sample_stripplot.png" />
 </p>
-<p style="line-height:0.5" align="center"><b>Figure 1. </b>Strip plots generated with data from Sep 2019 to Sep 2022.</p>
+<p style="line-height:0.5" align="center"><b>Figure 1.</b> Strip plots generated with data from Sep 2019 to Sep 2022.</p>
 
 The results of this inspection must be implemented in a dictionary, which is explained in the following section.
 
@@ -165,9 +165,9 @@ The script generates 2 heatmaps, all and row-normalized, and saves them in two p
 Figure 2 below shows the all-normalized crosstab heatmap for Dic 2019-Dic 2022 data. For example, the heatmap indicates that a high proportion of the accidents where motorcycles are involved corresponds to collisions with passenger vehicles (AUTOMOVIL) that causes injuries (CON HERIDOS-CHOQUE), followed by collisions with other motorcycles (MOTOCICLETA) that causes injuries (CON HERIDOS-CHOQUE). 
 
 <p style="line-height:0.5" align="center">
-    <img src="/images/crosstab_heatmap_all.png" />
+    <img src="images/crosstab_heatmap_all.png" />
 </p>
-<p style="line-height:0.5" align="center"><b>Figure 2. </b>All-normalized crosstab heatmap generated with data from Dic 2019 to Dic 2022.</p> 
+<p style="line-height:0.5" align="center"><b>Figure 2.</b> All-normalized crosstab heatmap generated with data from Dic 2019 to Dic 2022.</p> 
 
 ### Credits
 
