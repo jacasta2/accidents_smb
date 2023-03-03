@@ -95,7 +95,7 @@ After inspecting the labels and implementing the necessary changes to the dictio
 python model_prediction.py
 ``` 
 
-The results from a clustering performed with data from Sep 2019 to Sep 2022 and predictions made for data from Dic 2019 to Dic 2022 looks like the following:
+The results (the first 2 rows) from a clustering performed with data from Sep 2019 to Sep 2022 and predictions made for data from Dic 2019 to Dic 2022 looks like the following:
 
 | Highway corridor  | Time of day       | Accidents | Killed people | Injured people    | Vulnerable actors | Priority      | 
 | ---               | ---               | ---       | ---           | ---               | ---               | ---           |
