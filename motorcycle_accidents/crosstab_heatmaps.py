@@ -12,7 +12,7 @@ from date_creation import create_dates
 
 ##### The methodology works by bringing 3-year data. Before running the script, the person who runs it can modify the date
     ##### information below (year, month, day) and the script would automatically bring the 3-year data up to such date
-date_interval = create_dates(2021, 12, 31)
+date_interval = create_dates(2022, 12, 31)
 
 # We connect to the database
 db_conn = psycopg2.connect(

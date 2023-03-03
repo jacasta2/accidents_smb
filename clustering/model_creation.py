@@ -9,6 +9,7 @@ model_creation.py
 """
 
 import pandas as pd
+import numpy as np
 from sklearn import preprocessing
 from kmodes.kprototypes import KPrototypes
 import joblib
@@ -33,8 +34,31 @@ cluster_df_norm[["accidentes", "muertes", "heridos"]] = scaler.fit_transform(clu
 joblib.dump(scaler, "scaler.mod")
 
 ##### We apply the clustering
-kproto = KPrototypes(n_clusters = 3, init = "Cao")
+
+# We run the clustering 50 times
+cost = []
+clust = []
+for i in range(50):
+    
+    kproto = KPrototypes(n_clusters = 3, init = "Cao")
+    clusters = kproto.fit_predict(cluster_df_norm, categorical = [0, 4])
+    
+    # Save each model
+    clust.append(kproto)
+    # Save each model's cost
+    cost.append(kproto.cost_)
+
+# Transform the cost list into a numpy array
+costArray = np.array(cost)
+
+# Return the index from the smallest cost
+minIndex = costArray.argmin()
+
+# Retrieve the corresponding model and clusters
+kproto = clust[minIndex]
 clusters = kproto.fit_predict(cluster_df_norm, categorical = [0, 4])
+
+del cost, costArray, clust
 
 ##### We save the model
 joblib.dump(kproto, "kprototypes.mod")
