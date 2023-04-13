@@ -142,11 +142,11 @@ The folder **clustering** provides Jupyter notebooks for data creation, model cr
 
 ## FastAPI app
 
-Before running the script, please make sure to create the database and adjust the database connection parameters in the supporting script (`data_creation.py` from the folder **fastapi_app**) accordingly.
+Before running the script, please make sure to create the database and adjust the database connection parameters in the supporting script (`data_creation.py` from the folder **fastapi_api**) accordingly.
 
-This module allows the user to interact with the clustering model through an app. The main script of this module is `ml_api.py`, stored in the folder **fastapi_app**. The script allows the user to launch an app where she can predict priority levels for 3-year data up to a date she inputs in the app. The app uses the MinMaxScaler parameters and K-Prototypes model stored in the files `scaler.mod` and `kprototypes.mod`, respectively, from the folder **clustering**.
+This module allows the user to interact with the clustering model through an app. The main script of this module is `ml_api.py`, stored in the folder **fastapi_api**. The script allows the user to launch an app where she can predict priority levels for 3-year data up to a date she inputs in the app. The app uses the MinMaxScaler parameters and K-Prototypes model stored in the files `scaler.mod` and `kprototypes.mod`, respectively, from the folder **clustering**.
 
-To launch the app, open a terminal, navigate to the folder **fastapi_app** and run:
+To launch the app, open a terminal, navigate to the folder **fastapi_api** and run:
 
 ```bash
 uvicorn ml_api.py:app
