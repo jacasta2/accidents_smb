@@ -9,9 +9,9 @@ from data_creation import data_for_clustering
 
 ##### The methodology works by bringing 3-year data. Before running the script, the person who runs it can modify the date
     ##### information below (year, month, day) and the script would automatically bring the 3-year data up to such date
-cluster_df = data_for_clustering(2022, 3, 31)
+cluster_df = data_for_clustering(2022, 12, 31)
 ##### Alternatively, for illustrative purposes, we could simply load existing data
-#cluster_df = pd.read_csv("raw_data_predict_r.csv")
+#cluster_df = pd.read_csv("raw_data_predict.csv")
 
 #### We load the saved MinMax scaler and estimated K-Prototypes model
 scaler = joblib.load("scaler.mod")
@@ -34,7 +34,7 @@ cluster_df = pd.concat((cluster_df, pd.DataFrame(clusters)), axis = 1)
 cluster_df.rename({0: "Prioridad"}, axis = 1, inplace = True)
 ##### From the analyses run when creating the model for the first time, we know what the labels in "clusters" represent.
     ##### However, if the K-Prototypes model is re-estimated, "dictp" must be revised
-dictp = {0: "1 Priorizado", 1: "3 NA", 2: "2 Complementario"}
+dictp = {0: "3 NA", 1: "2 Complementario", 2: "1 Priorizado"}
 cluster_df.replace({"Prioridad": dictp}, inplace = True)
 datap = cluster_df.sort_values(by = ["Prioridad", "vulnerables", "muertes", "muertes_vulnerables", "heridos_vulnerables"], \
     ascending = [True, False, False, False, False])

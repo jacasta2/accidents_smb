@@ -17,7 +17,7 @@ from data_creation import data_for_clustering
 
 ##### The methodology works by bringing 3-year data. Before running the script, the person who runs it can modify the date
     ##### information below (year, month, day) and the script would automatically bring the 3-year data up to such date
-cluster_df = data_for_clustering(2021, 12, 31)
+cluster_df = data_for_clustering(2022, 9, 30)
 
 ##### We remove the corridors and the number of killed and injured vulnerable people to perform the clustering (the basic EDA
     ##### mentioned in data_creation.py revealed the number of killed and injured vulnerable people were redundant)
