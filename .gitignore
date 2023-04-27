@@ -144,3 +144,4 @@ data_model/*.vsdx
 data_model/*.xlsx
 /.vscode/
 /html_markdown
+/coding_tasks/
